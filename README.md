@@ -1,4 +1,4 @@
-# 🔥 Controle Avançado de LEDs, Display SSD1306 e Matriz WS2812 com RP2040 🔥
+# Controle Avançado de LEDs, Display SSD1306 e Matriz WS2812 com RP2040
 
 ## 📝 Visão Geral
 Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) e periféricos eletrônicos, utilizando comunicação serial (UART e I2C). O código implementa:
