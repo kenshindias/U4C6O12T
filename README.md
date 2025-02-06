@@ -41,6 +41,7 @@ Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) 
 ```
 |-- inc/
 |   |-- font.h
+|   |-- ssd1306.c 
 |   |-- ssd1306.h
 |-- .gitignore
 |-- CMakeLists.txt
