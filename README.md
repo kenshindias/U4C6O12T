@@ -10,6 +10,11 @@ Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) 
 
 ---
 
+## 🎥 Demonstração em Vídeo
+📹 *Adicione aqui o link para o vídeo de demonstração do projeto.*
+
+---
+
 ## 🚀 Funcionalidades
 ### 🔡 Entrada de caracteres via UART
 ✅ O caractere digitado no **Serial Monitor** é mostrado no **display SSD1306**.
@@ -82,11 +87,6 @@ make -j4
 3. Digite um caractere ou um número e observe sua exibição no **display SSD1306** e na **matriz WS2812** (caso número).
 4. Pressione os botões para alternar os LEDs.
 5. Ações registradas no **Serial Monitor**.
-
----
-
-## 🎥 Demonstração em Vídeo
-📹 *Adicione aqui o link para o vídeo de demonstração do projeto.*
 
 ---
 
