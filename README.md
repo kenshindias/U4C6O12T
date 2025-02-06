@@ -80,7 +80,7 @@ make -j4
 ```
 
 ### 🚀 Upload do Firmware
-1. Pressione o **BOOTSEL** na BitDogLab e conecte via USB.
+1. Pressione o **BOOTSEL** e o **RESET** na BitDogLab e conecte via USB.
 2. Arraste o arquivo `.uf2` gerado para a unidade montada.
 
 ---
