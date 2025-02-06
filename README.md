@@ -1,4 +1,4 @@
-# Controle Avançado de LEDs, Display SSD1306 e Matriz WS2812 com RP2040 
+# 🔥 Controle Avançado de LEDs, Display SSD1306 e Matriz WS2812 com RP2040 🔥
 
 ## 📝 Visão Geral
 Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) e periféricos eletrônicos, utilizando comunicação serial (UART e I2C). O código implementa:
@@ -11,7 +11,9 @@ Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) 
 ---
 
 ## 🎥 Demonstração em Vídeo
-📹 [![Vídeo de demonstração](https://img.youtube.com/shorts/paA3kxPHceE0.jpg)](https://youtu.be/shorts/paA3kxPHceE)
+📹 Assista ao vídeo de demonstração do projeto:
+[![Vídeo de Demonstração](https://img.youtube.com/vi/paA3kxPHceE/0.jpg)](https://www.youtube.com/shorts/paA3kxPHceE) 
+
 ---
 
 ## 🚀 Funcionalidades
@@ -43,9 +45,11 @@ Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) 
 
 ## 📂 Estrutura do Repositório
 ```
+|-- .vscode/
+|-- build/
 |-- inc/
 |   |-- font.h
-|   |-- ssd1306.c 
+|   |-- ssd1306.c
 |   |-- ssd1306.h
 |-- .gitignore
 |-- CMakeLists.txt
@@ -75,15 +79,15 @@ make -j4
 ```
 
 ### 🚀 Upload do Firmware
-1. Pressione o **BOOTSEL** e o **RESET** na BitDogLab e conecte via USB.
+1. Pressione o **BOOTSEL** na BitDogLab e conecte via USB.
 2. Arraste o arquivo `.uf2` gerado para a unidade montada.
 
 ---
 
 ## 🎮 Como Utilizar
-1. Conecte a placa BitDogLab ao PC via **USB**.
+1. Conecte a placa RP2040 ao PC via **USB**.
 2. Abra o **Serial Monitor** (Baud Rate: 115200).
-3. Digite um caractere ou um número e observe sua exibição no **display SSD1306** e na **matriz WS2812** (caso número).
+3. Digite um caractere e observe sua exibição no **display SSD1306** e na **matriz WS2812**.
 4. Pressione os botões para alternar os LEDs.
 5. Ações registradas no **Serial Monitor**.
 
