@@ -11,8 +11,7 @@ Este projeto explora a interação entre um microcontrolador RP2040 (BitDogLab) 
 ---
 
 ## 🎥 Demonstração em Vídeo
-📹 [((https://www.youtube.com/shorts/paA3kxPHceE).jpg)*](https://www.youtube.com/shorts/paA3kxPHceE)
-
+📹 [![Vídeo de demonstração](https://img.youtube.com/shorts/paA3kxPHceE0.jpg)](https://youtu.be/shorts/paA3kxPHceE)
 ---
 
 ## 🚀 Funcionalidades
