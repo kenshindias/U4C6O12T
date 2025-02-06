@@ -101,6 +101,5 @@ Projeto criado por **Ighor Dias** no curso **Formação Básica em Software Emba
 
 ## 📚 Referências
 🔗 [Documentação do Pico SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
-🔗 [Guia do display SSD1306](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples)
 🔗 [Uso de LEDs WS2812 com RP2040](https://github.com/raspberrypi/pico-examples/tree/master/pio/ws2812)
 
