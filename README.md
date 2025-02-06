@@ -1,48 +1,49 @@
-Projeto: Controle de LEDs, Display SSD1306 e Matriz WS2812 com RP2040
+✨ Projeto: Controle de LEDs, Display SSD1306 e Matriz WS2812 com RP2040 ✨
 
-Descrição
+📜 Descrição
 
-Este projeto tem como objetivo demonstrar o uso de comunicação serial (UART e I2C) e a interação com periféricos em um microcontrolador RP2040 (placa BitDogLab). O código implementa a manipulação de LEDs, um display SSD1306 via I2C, e uma matriz de LEDs WS2812, além da interação com botões utilizando interrupções (IRQ) e debounce por software.
+Este projeto demonstra o uso de comunicação serial (UART e I2C) e interação com periféricos no microcontrolador RP2040 (placa BitDogLab). O código implementa:
 
-Funcionalidades
+Manipulação de LEDs comuns e endereçáveis WS2812;
 
-Entrada de caracteres via UART
+Controle de um display OLED SSD1306 via I2C;
 
-O caractere digitado no Serial Monitor é exibido no display SSD1306.
+Interação com botões utilizando interrupções (IRQ) e debounce por software.
 
-Se o caractere for um número entre 0 e 9, a matriz WS2812 exibirá o padrão correspondente ao dígito.
+🚀 Funcionalidades
 
-Para caracteres não numéricos, a matriz de LEDs será apagada.
+🔡 Entrada de caracteres via UART
 
-Interação com botões
+✅ O caractere digitado no Serial Monitor é exibido no display SSD1306.
+✅ Se for um número (0-9), a matriz WS2812 exibirá o padrão correspondente.
+✅ Caracteres não numéricos apagam a matriz de LEDs.
 
-Botão A (GPIO 5): Alterna o estado do LED verde (GPIO 11).
+🔘 Interação com botões
 
-Botão B (GPIO 6): Alterna o estado do LED azul (GPIO 12).
+🟢 Botão A (GPIO 5): Alterna o estado do LED verde (GPIO 11).
+🔵 Botão B (GPIO 6): Alterna o estado do LED azul (GPIO 12).
+📢 O estado dos LEDs é atualizado no display SSD1306 e enviado ao Serial Monitor.
 
-O estado dos LEDs é atualizado no display SSD1306 e enviado ao Serial Monitor.
+🔳 Controle da matriz 5x5 WS2812
 
-Controle de matriz 5x5 de LEDs WS2812
+💡 Exibe padrões correspondentes a números de 0 a 9.
+🛠️ Implementação de debounce para evitar leituras incorretas.
 
-Exibe um padrão correspondente a números de 0 a 9.
+🛠️ Hardware Utilizado
 
-Implementa debounce via software.
+🖥️ Placa BitDogLab (RP2040)
 
-Hardware Utilizado
+🔲 Matriz 5x5 WS2812 (GPIO 7)
 
-Placa BitDogLab (RP2040)
+🔴🟢🔵 LED RGB (GPIOs 11, 12, 13)
 
-Matriz 5x5 WS2812 conectada ao GPIO 7
+🔘 Botão A (GPIO 5)
 
-LED RGB conectado aos GPIOs 11, 12 e 13
+🔘 Botão B (GPIO 6)
 
-Botão A conectado ao GPIO 5
+🖥️ Display SSD1306 via I2C (GPIOs 14 e 15)
 
-Botão B conectado ao GPIO 6
-
-Display SSD1306 via I2C (GPIOs 14 e 15)
-
-Estrutura do Repositório
+📂 Estrutura do Repositório
 
 |-- inc/
 |   |-- font.h
@@ -55,71 +56,55 @@ Estrutura do Repositório
 |-- wokwi.toml
 |-- ws2812.pio
 
-Compilação e Execução
+⚙️ Compilação e Execução
 
-Dependências
+📌 Dependências
 
-Antes de compilar, certifique-se de ter instalado:
+🔹 Pico SDK
+🔹 CMake
+🔹 Toolchain para RP2040
 
-Pico SDK
-
-CMake
-
-Toolchain para RP2040
-
-Passos para compilar
-
-Clone o repositório e navegue até a pasta do projeto:
+📥 Passos para Compilar
 
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_REPOSITORIO>
-
-Configure o ambiente:
-
 source ~/pico-sdk/pico_sdk_init.sh
-
-Crie e entre na pasta build/:
-
 mkdir build && cd build
-
-Execute o CMake:
-
 cmake ..
-
-Compile o projeto:
-
 make -j4
 
-Envie o firmware para a placa RP2040:
+🚀 Envio do Firmware
 
 Pressione o BOOTSEL na BitDogLab e conecte via USB.
 
 Arraste o arquivo .uf2 gerado para a unidade montada.
 
-Uso do Projeto
+🎮 Uso do Projeto
 
 Conecte a placa RP2040 ao PC via USB.
 
-Abra o Serial Monitor no VS Code ou outro terminal serial (Baud Rate: 115200).
+Abra o Serial Monitor (Baud Rate: 115200).
 
-Digite um caractere no Serial Monitor e observe o display SSD1306 e a matriz WS2812.
+Digite um caractere e observe as reações no display SSD1306 e na matriz WS2812.
 
 Pressione os botões para alternar os LEDs.
 
-O estado dos LEDs e os caracteres digitados serão exibidos no Serial Monitor.
+As ações serão exibidas no Serial Monitor.
 
-Licença
+🎥 Demonstração em Vídeo
+
+📹 Adicione aqui o link para o vídeo de demonstração do projeto.
+
+📝 Licença
 
 Este projeto está sob a licença MIT. Sinta-se livre para modificar e usar conforme necessário.
 
-Autor
+👤 Autor
 
-Desenvolvido por [Seu Nome] como parte do curso de Introdução às Interfaces de Comunicação Serial com RP2040.
+Desenvolvido por Ighor Dias como parte do curso Formação Básica em Software Embarcado, oferecido pelo Embarcatech.
 
-Referências
+📚 Referências
 
-Documentação do Pico SDK
-
-Guia do display SSD1306
-
-Uso de LEDs WS2812 com RP2040
+🔗 Documentação do Pico SDK
+🔗 Guia do display SSD1306
+🔗 Uso de LEDs WS2812 com RP2040
