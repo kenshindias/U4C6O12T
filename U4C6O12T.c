@@ -11,8 +11,6 @@
 #include "hardware/pio.h" // Para uso da PIO
 #include "inc/ssd1306.h"
 #include "inc/font.h"
-
-// Você precisa ter o arquivo ws2812.pio.h na pasta "inc" ou similar
 #include "ws2812.pio.h"
 
 // ---------------------------------------------------------------------------
@@ -36,14 +34,6 @@
 #define I2C_SDA 14
 #define I2C_SCL 15
 #define OLED_ADDR 0x3C
-
-// Se seu display for 128x64, descomente:
-//  #define WIDTH  128
-//  #define HEIGHT 64
-
-// Se for 128x32, descomente:
-//  #define WIDTH 128
-//  #define HEIGHT 32
 
 // ---------------------------------------------------------------------------
 // Globais para Display
